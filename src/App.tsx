@@ -71,10 +71,8 @@ function App(): JSX.Element {
                     </Col>
                 </Row>
             </Container>
-
-            <Quizzer></Quizzer>
             <hr></hr>
-            <DoubleHalf></DoubleHalf>
+            <Quizzer></Quizzer>
             <hr></hr>
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
             <hr></hr>
@@ -89,7 +87,7 @@ function App(): JSX.Element {
                 expectedAnswer="b"
             ></MultipleChoiceQuestion>
             <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
+            <DoubleHalf></DoubleHalf>
             <hr></hr>
             <ChooseTeam></ChooseTeam>
             <hr></hr>
