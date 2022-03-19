@@ -25,6 +25,17 @@ function App(): JSX.Element {
             <header className="App-header">
                 Ocean Shen: UD CISC275 with React Hooks and TypeScript
             </header>
+            <Quizzer></Quizzer>
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
             <h1>Hello World!</h1>
             <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
@@ -71,8 +82,6 @@ function App(): JSX.Element {
                     </Col>
                 </Row>
             </Container>
-            <hr></hr>
-            <Quizzer></Quizzer>
             <hr></hr>
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
             <hr></hr>
