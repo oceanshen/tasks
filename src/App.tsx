@@ -15,6 +15,7 @@ import { GiveAttempts } from "./form-components/GiveAttempts";
 import { EditMode } from "./form-components/EditMode";
 import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
 import { ChangeColor } from "./form-components/ChangeColor";
+import { Quizzer } from "./quizzer/Quizzer";
 
 import { Container, Col, Row, Button } from "react-bootstrap";
 
@@ -71,8 +72,10 @@ function App(): JSX.Element {
                 </Row>
             </Container>
 
+            <Quizzer></Quizzer>
             <hr></hr>
             <DoubleHalf></DoubleHalf>
+            <hr></hr>
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
             <hr></hr>
             <GiveAttempts></GiveAttempts>
