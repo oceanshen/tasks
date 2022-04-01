@@ -25,7 +25,8 @@ function App(): JSX.Element {
             <header className="App-header">
                 Ocean Shen: UD CISC275 with React Hooks and TypeScript
             </header>
-            <Quizzer></Quizzer>
+            <Quizzer expectedAnswer="42"></Quizzer>
+            {/*
             <hr></hr>
             <hr></hr>
             <hr></hr>
@@ -115,6 +116,7 @@ function App(): JSX.Element {
             <ChangeType></ChangeType>
             <hr />
             <CycleHoliday></CycleHoliday>
+                        */}
         </div>
     );
 }
