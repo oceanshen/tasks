@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import { Quizzer } from "./quizzer/Quizzer";
+
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
@@ -15,8 +17,6 @@ import { GiveAttempts } from "./form-components/GiveAttempts";
 import { EditMode } from "./form-components/EditMode";
 import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
 import { ChangeColor } from "./form-components/ChangeColor";
-import { Quizzer } from "./quizzer/Quizzer";
-
 import { Container, Col, Row, Button } from "react-bootstrap";
 
 function App(): JSX.Element {
@@ -26,7 +26,10 @@ function App(): JSX.Element {
                 Ocean Shen: UD CISC275 with React Hooks and TypeScript
             </header>
             <Quizzer expectedAnswer="42"></Quizzer>
-            {/*
+            <hr></hr>
+            <hr> Sketch </hr>
+
+            {/* */}
             <hr></hr>
             <hr></hr>
             <hr></hr>
@@ -116,7 +119,7 @@ function App(): JSX.Element {
             <ChangeType></ChangeType>
             <hr />
             <CycleHoliday></CycleHoliday>
-                        */}
+            {/* */}
         </div>
     );
 }
