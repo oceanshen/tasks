@@ -1,35 +1,61 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
+import { Quiz } from "../quizzer_interfaces/Quiz";
+import quiz_questions from "../data/quizzer_questions.json";
+import { QuizList } from "../quizzer_components/QuizList";
+import { Button } from "react-bootstrap";
+import { AddQuizModal } from "../quizzer_components/AddQuizModal";
 
-/*
 export function Quizzer(): JSX.Element {
-    return <h3>Quizzer</h3>;
-}
-*/
+    const [quizzes, setQuizzes] = useState<Quiz[]>(quiz_questions);
+    const [showAddModal, setShowAddModal] = useState<boolean>(false);
 
-type ChangeEvent = React.ChangeEvent<
-    HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
->;
-
-export function Quizzer({
-    expectedAnswer
-}: {
-    expectedAnswer: string;
-}): JSX.Element {
-    const [input, userInput] = useState<string>("");
-
-    function changeInput(event: ChangeEvent) {
-        userInput(event.target.value);
+    function editQuiz(id: number, newQuiz: Quiz) {
+        setQuizzes(
+            quizzes.map((quiz: Quiz): Quiz => (quiz.id === id ? newQuiz : quiz))
+        );
+        console.log(id);
     }
+
+    function deleteQuiz(id: number) {
+        setQuizzes(quizzes.filter((quiz: Quiz): boolean => quiz.id !== id));
+    }
+
+    function addQuiz(newQuiz: Quiz) {
+        const existing = quizzes.find(
+            (quiz: Quiz): boolean => quiz.id === newQuiz.id
+        );
+        if (existing === undefined) {
+            setQuizzes([...quizzes, newQuiz]);
+        }
+    }
+
+    const handleCloseAddModal = () => setShowAddModal(false);
+    const handleShowAddModal = () => setShowAddModal(true);
+
     return (
         <div>
-            <h3>Check Answer</h3>
-            <Form.Group controlId="formCheckAnswer">
-                <Form.Label>Check your answer here: </Form.Label>
-                <Form.Control value={input} onChange={changeInput} />
-            </Form.Group>
-            <option> Your answer is: </option>
-            {input === expectedAnswer ? "✔️" : "❌"}
+            <h3>Quizzer</h3>
+            <div>
+                <QuizList
+                    quizzes={quizzes}
+                    editQuiz={editQuiz}
+                    deleteQuiz={deleteQuiz}
+                ></QuizList>
+            </div>
+            <div>
+                <Button
+                    variant="success"
+                    className="m-4"
+                    onClick={handleShowAddModal}
+                >
+                    Add New Quiz
+                </Button>
+                <AddQuizModal
+                    show={showAddModal}
+                    handleClose={handleCloseAddModal}
+                    addQuiz={addQuiz}
+                ></AddQuizModal>
+            </div>
         </div>
     );
 }

@@ -27,9 +27,12 @@ function App(): JSX.Element {
             <header className="App-header">
                 Ocean Shen: UD CISC275 with React Hooks and TypeScript
             </header>
-            <Quizzer expectedAnswer="42"></Quizzer>
+            <Quizzer></Quizzer>
             <hr></hr>
             <h1> Sketch </h1>
+            <div>
+                <img src={require("./shensketch.png")} />
+            </div>
             <hr></hr>
             <h1> Requirements </h1>
             <ul>
