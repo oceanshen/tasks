@@ -37,3 +37,10 @@
         transform: rotate(360deg);
     }
 }
+img {
+    width: 100%;
+}
+.shensketch.png {
+    max-width: 50%;
+    margin: 50px auto;
+}
