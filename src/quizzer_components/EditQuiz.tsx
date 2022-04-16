@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Question } from "../quizzer_interfaces/question";
-import { Quiz } from "../quizzer_interfaces/Quiz";
+import { Quiz } from "../quizzer_interfaces/quiz";
 import { AddQuestionModal } from "./AddQuestionModal";
 import { QuestionEditor } from "./EditQuestion";
 
