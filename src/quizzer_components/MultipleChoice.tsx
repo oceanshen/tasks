@@ -35,7 +35,7 @@ export function MultipleChoiceQuestion({
     return (
         <div>
             <h1> Multiple Choice Question </h1>
-            <Form.Label> Choose an Answer:</Form.Label>
+            <Form.Label> Choose an Answer: </Form.Label>
             <Form.Select value={answer} onChange={updateAns}>
                 {options.map(
                     (dropOption: string): JSX.Element => (

@@ -169,7 +169,6 @@ export function QuestionEditor({
                 >
                     <div className="ms-2 me-auto">
                         <Container>
-                            {/* Question Name */}
                             <Row>
                                 <Col>
                                     <p>Question Name</p>
@@ -181,7 +180,6 @@ export function QuestionEditor({
                                     ></QuestionNameEditor>
                                 </Col>
                             </Row>
-                            {/* Question Body */}
                             <Row>
                                 <Col>
                                     <p>Question Body</p>
@@ -193,7 +191,6 @@ export function QuestionEditor({
                                     ></QuestionBodyEditor>
                                 </Col>
                             </Row>
-                            {/* Question Expected */}
                             <Row>
                                 <Col>
                                     <p>Question Expected Answer</p>
@@ -205,7 +202,6 @@ export function QuestionEditor({
                                     ></QuestionExpectedEditor>
                                 </Col>
                             </Row>
-                            {/* Question Options */}
                             <Row>
                                 <Col>
                                     <p>Question Options</p>
@@ -217,7 +213,6 @@ export function QuestionEditor({
                                     ></QuestionOptionsEditor>
                                 </Col>
                             </Row>
-                            {/* Question Points */}
                             <Row>
                                 <Col>
                                     <p>Question Points</p>
@@ -229,7 +224,6 @@ export function QuestionEditor({
                                     ></QuestionPointsEditor>
                                 </Col>
                             </Row>
-                            {/* Question Published */}
                             <Row>
                                 <Col>
                                     <QuestionPublishedEditor
@@ -238,7 +232,6 @@ export function QuestionEditor({
                                     ></QuestionPublishedEditor>
                                 </Col>
                             </Row>
-                            {/* Move Question Up */}
                             <Row>
                                 <Col>
                                     <Button
@@ -249,7 +242,6 @@ export function QuestionEditor({
                                     </Button>
                                 </Col>
                             </Row>
-                            {/* Move Question Down */}
                             <Row>
                                 <Col>
                                     <Button
@@ -262,7 +254,6 @@ export function QuestionEditor({
                                     </Button>
                                 </Col>
                             </Row>
-                            {/* Delete Question */}
                             <Row>
                                 <Col>
                                     <QuestionDeleteEditor

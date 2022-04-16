@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Quiz } from "../quizzer_interfaces/Quiz";
+import { Quiz } from "../quizzer_interfaces/quiz";
 import { Question } from "../quizzer_interfaces/question";
 import { QuestionList } from "./QuestionList";
 import { QuizEditor } from "./EditQuiz";
@@ -17,11 +17,11 @@ export function QuizView({
     const [questions, setQuestions] = useState<Question[]>(quiz.questions);
     const [points, setPoints] = useState<number>(0);
     const [visible, setVisible] = useState<boolean>(false);
-    const [editing, setEditing] = useState<boolean>(false);
-    const [showUnPublished, setShowUnPublished] = useState<boolean>(true);
+    const [edit, setEdit] = useState<boolean>(false);
+    const [published, setPublished] = useState<boolean>(true);
 
     function flipShowUnPublished(): void {
-        setShowUnPublished(!showUnPublished);
+        setPublished(!published);
     }
 
     function flipVisibility(): void {
@@ -33,10 +33,10 @@ export function QuizView({
     }
 
     function changeEditing() {
-        setEditing(!editing);
+        setEdit(!edit);
     }
 
-    return editing ? (
+    return edit ? (
         <QuizEditor
             changeEditing={changeEditing}
             quiz={quiz}
@@ -84,7 +84,7 @@ export function QuizView({
                     <QuestionList
                         questions={questions}
                         addPoints={addPoints}
-                        showUnPublished={showUnPublished}
+                        showUnPublished={published}
                     ></QuestionList>
                 </Row>
             )}

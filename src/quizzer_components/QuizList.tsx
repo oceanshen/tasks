@@ -1,5 +1,5 @@
 import React from "react";
-import { Quiz } from "../quizzer_interfaces/Quiz";
+import { Quiz } from "../quizzer_interfaces/quiz";
 import { Stack } from "react-bootstrap";
 import { QuizView } from "./QuizView";
 

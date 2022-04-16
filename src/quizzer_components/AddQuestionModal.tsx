@@ -34,7 +34,6 @@ export function AddQuestionModal({
                 <Modal.Title>Add New Question</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                {/* Name */}
                 <Form.Group controlId="formQuestionId" as={Row}>
                     <Form.Label column sm={3}>
                         Question ID (default questions end at 6):
