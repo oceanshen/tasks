@@ -40,7 +40,7 @@ export function ShortAnswer({
                     placeholder="Enter Answer Here"
                 ></Form.Control>
             </Form.Group>
-            <div>Result: {answer === expectedAnswer ? "✔️" : "❌"}</div>
+            <div> Result: {answer === expectedAnswer ? "✔️" : "❌"} </div>
         </div>
     );
 }

@@ -60,12 +60,8 @@ export function AddQuestionModal({
                 </Form.Group>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={saveChanges}>
-                    Save New Question
-                </Button>
+                <Button onClick={handleClose}>Close</Button>
+                <Button onClick={saveChanges}>Save Question</Button>
             </Modal.Footer>
         </Modal>
     );
