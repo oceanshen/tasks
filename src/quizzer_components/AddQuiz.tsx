@@ -44,12 +44,8 @@ export function AddQuizModal({
                 </Form.Group>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={saveChanges}>
-                    Save New Quiz
-                </Button>
+                <Button onClick={handleClose}>Close</Button>
+                <Button onClick={saveChanges}>Save New Quiz</Button>
             </Modal.Footer>
         </Modal>
     );

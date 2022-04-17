@@ -43,7 +43,6 @@ export function QuestionDeleteEditor({
                     )
                 )
             }
-            variant="danger"
         >
             Delete Question
         </Button>
@@ -235,7 +234,6 @@ export function QuestionEditor({
                             <Row>
                                 <Col>
                                     <Button
-                                        variant="primary"
                                         onClick={() => MoveQuestionUp(question)}
                                     >
                                         Move Question Up
@@ -245,7 +243,6 @@ export function QuestionEditor({
                             <Row>
                                 <Col>
                                     <Button
-                                        variant="primary"
                                         onClick={() =>
                                             MoveQuestionDown(question)
                                         }

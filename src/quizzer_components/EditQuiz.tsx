@@ -116,14 +116,11 @@ export function QuizEditor({
                             addQuestion={addQuestion}
                         ></AddQuestionModal>
                     </div>
-                    <Button onClick={save} variant="success" className="me-4">
+                    <Button onClick={save} className="me-4">
                         Save Quiz
                     </Button>
-                    <Button
-                        onClick={() => deleteQuiz(quiz.id)}
-                        variant="danger"
-                    >
-                        Delete Entire Quiz
+                    <Button onClick={() => deleteQuiz(quiz.id)}>
+                        Delete Quiz
                     </Button>
                 </Col>
             </Row>
