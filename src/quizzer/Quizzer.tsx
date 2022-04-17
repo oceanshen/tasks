@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { Quiz } from "../quizzer_interfaces/quiz";
-import quiz_questions from "../data/quizzer_questions.json";
-import { QuizList } from "../quizzer_components/QuizList";
 import { Button } from "react-bootstrap";
-import { AddQuizModal } from "../quizzer_components/AddQuizModal";
+import { Quiz } from "../quizzer_interfaces/quiz";
+import { QuizList } from "../quizzer_components/QuizList";
+import quiz from "../quizzer_data/quizzer_questions.json";
+
+import { AddQuizModal } from "../quizzer_components/AddQuiz";
+
+const QUIZZES = quiz.map((quiz: Quiz) => ({ ...quiz, opened: false }));
 
 export function Quizzer(): JSX.Element {
-    const [quizzes, setQuizzes] = useState<Quiz[]>(quiz_questions);
+    const [quizzes, setQuizzes] = useState<Quiz[]>(QUIZZES);
     const [showAddModal, setShowAddModal] = useState<boolean>(false);
 
     function editQuiz(id: number, newQuiz: Quiz) {
