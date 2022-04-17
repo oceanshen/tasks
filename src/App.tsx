@@ -25,7 +25,7 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                Ocean Shen: UD CISC275 with React Hooks and TypeScript
+                Ocean Shen: UD CISC275 with React Hooks and TypeScript!
             </header>
             <Quizzer></Quizzer>
             <hr></hr>
