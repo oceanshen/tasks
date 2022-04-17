@@ -6,7 +6,7 @@ import quiz from "../quizzer_data/quizzer_questions.json";
 
 import { AddQuizModal } from "../quizzer_components/AddQuiz";
 
-const QUIZZES = quiz.map((quiz: Quiz) => ({ ...quiz, opened: false }));
+const QUIZZES = quiz.map((quiz: Quiz) => ({ ...quiz }));
 
 export function Quizzer(): JSX.Element {
     const [quizzes, setQuizzes] = useState<Quiz[]>(QUIZZES);

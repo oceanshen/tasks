@@ -18,8 +18,7 @@ export function AddQuizModal({
             id: id,
             title: "",
             description: "",
-            questions: [],
-            opened: false
+            questions: []
         });
         handleClose();
     }
