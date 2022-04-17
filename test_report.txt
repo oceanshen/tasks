@@ -76,9 +76,9 @@ FAIL src/HtmlCss.test.tsx
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
-      Name "Edit Mode":
+      Name "Edit":
       [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -88,9 +88,9 @@ FAIL src/HtmlCss.test.tsx
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
-      Name "Edit Mode":
+      Name "Edit":
       [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -238,10 +238,10 @@ FAIL src/HtmlCss.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -301,10 +301,10 @@ FAIL src/HtmlCss.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -435,9 +435,9 @@ FAIL src/HtmlCss.test.tsx
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
-      Name "Edit Mode":
+      Name "Edit":
       [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -447,9 +447,9 @@ FAIL src/HtmlCss.test.tsx
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
-      Name "Edit Mode":
+      Name "Edit":
       [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -597,10 +597,10 @@ FAIL src/HtmlCss.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -660,10 +660,10 @@ FAIL src/HtmlCss.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -839,10 +839,10 @@ FAIL src/text.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -902,10 +902,10 @@ FAIL src/text.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -1026,8 +1026,8 @@ All files                    |    70.2 |    73.79 |   69.31 |    71.3 |
  src/quizzer_components      |   10.89 |     7.14 |    9.09 |   11.34 |                   
   AddQuestion.tsx            |       0 |      100 |       0 |       0 | 14-57             
   AddQuiz.tsx                |      40 |      100 |   33.33 |      40 | 17-23,41          
-  EditQuestion.tsx           |       0 |        0 |       0 |       0 | 14-250            
-  EditQuiz.tsx               |       0 |        0 |       0 |       0 | 23-123            
+  EditQuestion.tsx           |       0 |        0 |       0 |       0 | 14-247            
+  EditQuiz.tsx               |       0 |        0 |       0 |       0 | 23-122            
   MultipleChoice.tsx         |       0 |        0 |       0 |       0 | 19-42             
   QuestionList.tsx           |       0 |      100 |       0 |       0 | 15-18             
   QuestionView.tsx           |       0 |        0 |       0 |       0 | 15                
@@ -1106,9 +1106,9 @@ FAIL src/HtmlCss.test.tsx
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
-      Name "Edit Mode":
+      Name "Edit":
       [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -1118,9 +1118,9 @@ FAIL src/HtmlCss.test.tsx
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
-      Name "Edit Mode":
+      Name "Edit":
       [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -1268,10 +1268,10 @@ FAIL src/HtmlCss.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -1331,10 +1331,10 @@ FAIL src/HtmlCss.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -1465,9 +1465,9 @@ FAIL src/HtmlCss.test.tsx
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
-      Name "Edit Mode":
+      Name "Edit":
       [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -1477,9 +1477,9 @@ FAIL src/HtmlCss.test.tsx
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
-      Name "Edit Mode":
+      Name "Edit":
       [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -1627,10 +1627,10 @@ FAIL src/HtmlCss.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -1690,10 +1690,10 @@ FAIL src/HtmlCss.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -1857,10 +1857,10 @@ FAIL src/text.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -1920,10 +1920,10 @@ FAIL src/text.test.tsx
                         [0mOpen/Close Quiz[0m
                       [36m</button>[39m
                       [36m<button[39m
-                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mEdit Mode[0m
+                        [0mEdit[0m
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
@@ -2011,5 +2011,5 @@ FAIL src/text.test.tsx
 Test Suites: 2 failed, 21 passed, 23 total
 Tests:       4 failed, 138 passed, 142 total
 Snapshots:   0 total
-Time:        15.688 s
+Time:        14.928 s
 Ran all test suites.
