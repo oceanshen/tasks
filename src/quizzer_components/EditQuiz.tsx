@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Question } from "../quizzer_interfaces/question";
 import { Quiz } from "../quizzer_interfaces/quiz";
-import { AddQuestionModal } from "./AddQuestionModal";
+import { AddQuestionModal } from "./AddQuestion";
 import { QuestionEditor } from "./EditQuestion";
 
 export function QuizEditor({

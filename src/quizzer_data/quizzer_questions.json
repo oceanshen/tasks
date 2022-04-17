@@ -4,14 +4,14 @@
         "description": "How well do you know Ocean's friends?",
         "questions": [
             {
-                "id": 1,
                 "name": "Question 1",
                 "body": "What does Matt order at Pencader?",
+                "points": 5,
                 "type": "short_answer",
                 "options": [],
                 "expected": "chicken sandwich",
-                "published": true,
-                "points": 5
+                "id": 1,
+                "published": true
             },
 
             {
@@ -50,7 +50,8 @@
                 "published": true,
                 "points": 5
             }
-        ]
+        ],
+        "id": 1
     },
 
     {
@@ -100,6 +101,7 @@
                 "published": true,
                 "points": 5
             }
-        ]
+        ],
+        "id": 2
     }
 ]
