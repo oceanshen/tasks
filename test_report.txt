@@ -10,7 +10,744 @@ PASS src/components/TwoDice.test.tsx
 PASS src/form-components/MultipleChoiceQuestion.test.tsx
 PASS src/bad-components/ChooseTeam.test.tsx
 PASS src/bad-components/DoubleHalf.test.tsx
-PASS src/HtmlCss.test.tsx
+FAIL src/HtmlCss.test.tsx
+  ● Some HTML Elements are added. › There is an image with alt text
+
+    expect(element).toHaveAttribute("alt") // element.hasAttribute("alt")
+
+    Expected the element to have attribute:
+      alt
+    Received:
+      null
+
+      17 |         const image = screen.getByRole("img");
+      18 |         expect(image).toBeInTheDocument();
+    > 19 |         expect(image).toHaveAttribute("alt");
+         |                       ^
+      20 |     });
+      21 |
+      22 |     test("There is a list with at least three elements", () => {
+
+      at Object.<anonymous> (src/HtmlCss.test.tsx:19:23)
+
+  ● Some Bootstrap Elements are added › There is one bootstrap button with the text 'Log Hello World'
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Log Hello World/i`
+
+    Here are the accessible roles:
+
+      banner:
+
+      Name "":
+      [36m<header[39m
+        [33mclass[39m=[32m"App-header"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      heading:
+
+      Name "Quizzer":
+      [36m<h3 />[39m
+
+      Name "Ocean's Friends":
+      [36m<h3 />[39m
+
+      Name "ID: 1":
+      [36m<h6 />[39m
+
+      Name "Ocean Himself":
+      [36m<h3 />[39m
+
+      Name "ID: 2":
+      [36m<h6 />[39m
+
+      Name "Sketch":
+      [36m<h1 />[39m
+
+      Name "Requirements":
+      [36m<h1 />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Open/Close Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Mode":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Open/Close Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Mode":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Add New Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"m-4 btn btn-success"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      separator:
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      --------------------------------------------------
+      img:
+
+      Name "":
+      [36m<img[39m
+        [33msrc[39m=[32m"shensketch.png"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      list:
+
+      Name "":
+      [36m<ul />[39m
+
+      --------------------------------------------------
+      listitem:
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      --------------------------------------------------
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mOcean Shen: UD CISC275 with React Hooks and TypeScript![0m
+          [36m</header>[39m
+          [36m<div>[39m
+            [36m<h3>[39m
+              [0mQuizzer[0m
+            [36m</h3>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"vstack gap-3"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean's Friends[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m1[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean's friends?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean Himself[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m2[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"m-4 btn btn-success"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Quiz[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Sketch [0m
+          [36m</h1>[39m
+          [36m<div>[39m
+            [36m<img[39m
+              [33msrc[39m=[32m"shensketch.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Requirements [0m
+          [36m</h1>[39m
+          [36m<ul>[39m
+            [36m<li>[39m
+              [0m See list of quizzes [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Select specific quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Two types of questions: MC and SA [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Check to see if answer is correct [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Show total points [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Clear existing quiz answers [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Publish/unpublish question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Filter questions so only published ones are seen [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Edit questions/fields [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Reorder quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz [0m
+            [36m</li>[39m
+          [36m</ul>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      41 |     test("There is one bootstrap button with the text 'Log Hello World'", () => {
+      42 |         render(<App />);
+    > 43 |         const button = screen.getByRole("button", { name: /Log Hello World/i });
+         |                               ^
+      44 |         expect(button).toBeInTheDocument();
+      45 |         expect(button).toHaveClass("btn");
+      46 |         expect(button).toHaveClass("btn-primary");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:43:31)
+
+  ● Some Bootstrap Elements are added › Clicking the bootstrap button logs 'Hello World!'
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Log Hello World/i`
+
+    Here are the accessible roles:
+
+      banner:
+
+      Name "":
+      [36m<header[39m
+        [33mclass[39m=[32m"App-header"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      heading:
+
+      Name "Quizzer":
+      [36m<h3 />[39m
+
+      Name "Ocean's Friends":
+      [36m<h3 />[39m
+
+      Name "ID: 1":
+      [36m<h6 />[39m
+
+      Name "Ocean Himself":
+      [36m<h3 />[39m
+
+      Name "ID: 2":
+      [36m<h6 />[39m
+
+      Name "Sketch":
+      [36m<h1 />[39m
+
+      Name "Requirements":
+      [36m<h1 />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Open/Close Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Mode":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Open/Close Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Mode":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Add New Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"m-4 btn btn-success"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      separator:
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      --------------------------------------------------
+      img:
+
+      Name "":
+      [36m<img[39m
+        [33msrc[39m=[32m"shensketch.png"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      list:
+
+      Name "":
+      [36m<ul />[39m
+
+      --------------------------------------------------
+      listitem:
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      --------------------------------------------------
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mOcean Shen: UD CISC275 with React Hooks and TypeScript![0m
+          [36m</header>[39m
+          [36m<div>[39m
+            [36m<h3>[39m
+              [0mQuizzer[0m
+            [36m</h3>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"vstack gap-3"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean's Friends[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m1[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean's friends?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean Himself[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m2[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"m-4 btn btn-success"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Quiz[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Sketch [0m
+          [36m</h1>[39m
+          [36m<div>[39m
+            [36m<img[39m
+              [33msrc[39m=[32m"shensketch.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Requirements [0m
+          [36m</h1>[39m
+          [36m<ul>[39m
+            [36m<li>[39m
+              [0m See list of quizzes [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Select specific quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Two types of questions: MC and SA [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Check to see if answer is correct [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Show total points [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Clear existing quiz answers [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Publish/unpublish question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Filter questions so only published ones are seen [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Edit questions/fields [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Reorder quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz [0m
+            [36m</li>[39m
+          [36m</ul>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      56 |         const consoleSpy = jest.spyOn(console, "log");
+      57 |         render(<App />);
+    > 58 |         const button = screen.getByRole("button", { name: /Log Hello World/i });
+         |                               ^
+      59 |         userEvent.click(button);
+      60 |         expect(consoleSpy).toHaveBeenCalledWith("Hello World!");
+      61 |     });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:58:31)
+
 PASS src/functions.test.ts
 PASS src/form-components/CheckAnswer.test.tsx
 PASS src/form-components/EditMode.test.tsx
@@ -23,13 +760,241 @@ PASS src/components/RevealAnswer.test.tsx
 PASS src/bad-components/ColoredBox.test.tsx
 PASS src/bad-components/ShoveBox.test.tsx
 PASS src/quizzer/Quizzer.test.tsx
-PASS src/text.test.tsx
+FAIL src/text.test.tsx
+  ● renders the text 'Hello World' somewhere
+
+    TestingLibraryElementError: Unable to find an element with the text: /Hello World/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mOcean Shen: UD CISC275 with React Hooks and TypeScript![0m
+          [36m</header>[39m
+          [36m<div>[39m
+            [36m<h3>[39m
+              [0mQuizzer[0m
+            [36m</h3>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"vstack gap-3"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean's Friends[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m1[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean's friends?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean Himself[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m2[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"m-4 btn btn-success"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Quiz[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Sketch [0m
+          [36m</h1>[39m
+          [36m<div>[39m
+            [36m<img[39m
+              [33msrc[39m=[32m"shensketch.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Requirements [0m
+          [36m</h1>[39m
+          [36m<ul>[39m
+            [36m<li>[39m
+              [0m See list of quizzes [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Select specific quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Two types of questions: MC and SA [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Check to see if answer is correct [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Show total points [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Clear existing quiz answers [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Publish/unpublish question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Filter questions so only published ones are seen [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Edit questions/fields [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Reorder quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz [0m
+            [36m</li>[39m
+          [36m</ul>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+       5 | test("renders the text 'Hello World' somewhere", () => {
+       6 |     render(<App />);
+    >  7 |     const texts = screen.getAllByText(/Hello World/);
+         |                          ^
+       8 |     expect(texts.length).toBeGreaterThanOrEqual(1);
+       9 | });
+      10 |
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByText (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/text.test.tsx:7:26)
+
 PASS src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |    98.7 |    92.92 |     100 |   98.68 |                   
- src                         |   97.88 |    91.76 |     100 |   97.84 |                   
+All files                    |    70.2 |    73.79 |   69.31 |    71.3 |                   
+ src                         |   97.87 |    91.76 |     100 |   97.82 |                   
   App.tsx                    |     100 |      100 |     100 |     100 |                   
   arrays.ts                  |     100 |      100 |     100 |     100 |                   
   functions.ts               |   86.95 |    83.72 |     100 |   86.95 | 22,24,28          
@@ -56,12 +1021,995 @@ All files                    |    98.7 |    92.92 |     100 |   98.68 |
  src/interfaces              |       0 |        0 |       0 |       0 |                   
   answer.ts                  |       0 |        0 |       0 |       0 |                   
   question.ts                |       0 |        0 |       0 |       0 |                   
- src/quizzer                 |     100 |      100 |     100 |     100 |                   
-  Quizzer.tsx                |     100 |      100 |     100 |     100 |                   
+ src/quizzer                 |   38.88 |        0 |      20 |   42.85 |                   
+  Quizzer.tsx                |   38.88 |        0 |      20 |   42.85 | 16-31             
+ src/quizzer_components      |   10.89 |     7.14 |    9.09 |   11.34 |                   
+  AddQuestion.tsx            |       0 |      100 |       0 |       0 | 14-57             
+  AddQuiz.tsx                |      40 |      100 |   33.33 |      40 | 17-23,41          
+  EditQuestion.tsx           |       0 |        0 |       0 |       0 | 14-250            
+  EditQuiz.tsx               |       0 |        0 |       0 |       0 | 23-123            
+  MultipleChoice.tsx         |       0 |        0 |       0 |       0 | 19-42             
+  QuestionList.tsx           |       0 |      100 |       0 |       0 | 15-18             
+  QuestionView.tsx           |       0 |        0 |       0 |       0 | 15                
+  QuizList.tsx               |     100 |      100 |     100 |     100 |                   
+  QuizView.tsx               |   63.63 |       50 |   33.33 |   63.63 | 24-36             
+  ShortAnswer.tsx            |       0 |        0 |       0 |       0 | 17-32             
+ src/quizzer_interfaces      |       0 |        0 |       0 |       0 |                   
+  question.ts                |       0 |        0 |       0 |       0 |                   
+  quiz.ts                    |       0 |        0 |       0 |       0 |                   
 -----------------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 23 passed, 23 total
-Tests:       142 passed, 142 total
+Summary of all failing tests
+FAIL src/HtmlCss.test.tsx
+  ● Some HTML Elements are added. › There is an image with alt text
+
+    expect(element).toHaveAttribute("alt") // element.hasAttribute("alt")
+
+    Expected the element to have attribute:
+      alt
+    Received:
+      null
+
+      17 |         const image = screen.getByRole("img");
+      18 |         expect(image).toBeInTheDocument();
+    > 19 |         expect(image).toHaveAttribute("alt");
+         |                       ^
+      20 |     });
+      21 |
+      22 |     test("There is a list with at least three elements", () => {
+
+      at Object.<anonymous> (src/HtmlCss.test.tsx:19:23)
+
+  ● Some Bootstrap Elements are added › There is one bootstrap button with the text 'Log Hello World'
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Log Hello World/i`
+
+    Here are the accessible roles:
+
+      banner:
+
+      Name "":
+      [36m<header[39m
+        [33mclass[39m=[32m"App-header"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      heading:
+
+      Name "Quizzer":
+      [36m<h3 />[39m
+
+      Name "Ocean's Friends":
+      [36m<h3 />[39m
+
+      Name "ID: 1":
+      [36m<h6 />[39m
+
+      Name "Ocean Himself":
+      [36m<h3 />[39m
+
+      Name "ID: 2":
+      [36m<h6 />[39m
+
+      Name "Sketch":
+      [36m<h1 />[39m
+
+      Name "Requirements":
+      [36m<h1 />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Open/Close Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Mode":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Open/Close Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Mode":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Add New Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"m-4 btn btn-success"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      separator:
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      --------------------------------------------------
+      img:
+
+      Name "":
+      [36m<img[39m
+        [33msrc[39m=[32m"shensketch.png"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      list:
+
+      Name "":
+      [36m<ul />[39m
+
+      --------------------------------------------------
+      listitem:
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      --------------------------------------------------
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mOcean Shen: UD CISC275 with React Hooks and TypeScript![0m
+          [36m</header>[39m
+          [36m<div>[39m
+            [36m<h3>[39m
+              [0mQuizzer[0m
+            [36m</h3>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"vstack gap-3"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean's Friends[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m1[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean's friends?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean Himself[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m2[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"m-4 btn btn-success"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Quiz[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Sketch [0m
+          [36m</h1>[39m
+          [36m<div>[39m
+            [36m<img[39m
+              [33msrc[39m=[32m"shensketch.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Requirements [0m
+          [36m</h1>[39m
+          [36m<ul>[39m
+            [36m<li>[39m
+              [0m See list of quizzes [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Select specific quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Two types of questions: MC and SA [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Check to see if answer is correct [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Show total points [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Clear existing quiz answers [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Publish/unpublish question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Filter questions so only published ones are seen [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Edit questions/fields [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Reorder quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz [0m
+            [36m</li>[39m
+          [36m</ul>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      41 |     test("There is one bootstrap button with the text 'Log Hello World'", () => {
+      42 |         render(<App />);
+    > 43 |         const button = screen.getByRole("button", { name: /Log Hello World/i });
+         |                               ^
+      44 |         expect(button).toBeInTheDocument();
+      45 |         expect(button).toHaveClass("btn");
+      46 |         expect(button).toHaveClass("btn-primary");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:43:31)
+
+  ● Some Bootstrap Elements are added › Clicking the bootstrap button logs 'Hello World!'
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Log Hello World/i`
+
+    Here are the accessible roles:
+
+      banner:
+
+      Name "":
+      [36m<header[39m
+        [33mclass[39m=[32m"App-header"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      heading:
+
+      Name "Quizzer":
+      [36m<h3 />[39m
+
+      Name "Ocean's Friends":
+      [36m<h3 />[39m
+
+      Name "ID: 1":
+      [36m<h6 />[39m
+
+      Name "Ocean Himself":
+      [36m<h3 />[39m
+
+      Name "ID: 2":
+      [36m<h6 />[39m
+
+      Name "Sketch":
+      [36m<h1 />[39m
+
+      Name "Requirements":
+      [36m<h1 />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Open/Close Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Mode":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Open/Close Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Mode":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Add New Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"m-4 btn btn-success"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      separator:
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      --------------------------------------------------
+      img:
+
+      Name "":
+      [36m<img[39m
+        [33msrc[39m=[32m"shensketch.png"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      list:
+
+      Name "":
+      [36m<ul />[39m
+
+      --------------------------------------------------
+      listitem:
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      Name "":
+      [36m<li />[39m
+
+      --------------------------------------------------
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mOcean Shen: UD CISC275 with React Hooks and TypeScript![0m
+          [36m</header>[39m
+          [36m<div>[39m
+            [36m<h3>[39m
+              [0mQuizzer[0m
+            [36m</h3>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"vstack gap-3"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean's Friends[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m1[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean's friends?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean Himself[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m2[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"m-4 btn btn-success"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Quiz[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Sketch [0m
+          [36m</h1>[39m
+          [36m<div>[39m
+            [36m<img[39m
+              [33msrc[39m=[32m"shensketch.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Requirements [0m
+          [36m</h1>[39m
+          [36m<ul>[39m
+            [36m<li>[39m
+              [0m See list of quizzes [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Select specific quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Two types of questions: MC and SA [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Check to see if answer is correct [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Show total points [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Clear existing quiz answers [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Publish/unpublish question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Filter questions so only published ones are seen [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Edit questions/fields [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Reorder quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz [0m
+            [36m</li>[39m
+          [36m</ul>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      56 |         const consoleSpy = jest.spyOn(console, "log");
+      57 |         render(<App />);
+    > 58 |         const button = screen.getByRole("button", { name: /Log Hello World/i });
+         |                               ^
+      59 |         userEvent.click(button);
+      60 |         expect(consoleSpy).toHaveBeenCalledWith("Hello World!");
+      61 |     });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:58:31)
+
+FAIL src/text.test.tsx
+  ● renders the text 'Hello World' somewhere
+
+    TestingLibraryElementError: Unable to find an element with the text: /Hello World/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mOcean Shen: UD CISC275 with React Hooks and TypeScript![0m
+          [36m</header>[39m
+          [36m<div>[39m
+            [36m<h3>[39m
+              [0mQuizzer[0m
+            [36m</h3>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"vstack gap-3"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean's Friends[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m1[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean's friends?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h3>[39m
+                          [0mOcean Himself[0m
+                        [36m</h3>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<h6>[39m
+                          [0mID: [0m
+                          [0m2[0m
+                        [36m</h6>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mHow well do you know Ocean?[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mNumber of Questions: [0m
+                        [0m4[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mPossible Points:[0m
+                        [0m [0m
+                        [0m20[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mOpen/Close Quiz[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Mode[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"m-4 btn btn-success"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Quiz[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Sketch [0m
+          [36m</h1>[39m
+          [36m<div>[39m
+            [36m<img[39m
+              [33msrc[39m=[32m"shensketch.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<h1>[39m
+            [0m Requirements [0m
+          [36m</h1>[39m
+          [36m<ul>[39m
+            [36m<li>[39m
+              [0m See list of quizzes [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Select specific quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Two types of questions: MC and SA [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Check to see if answer is correct [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Show total points [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Clear existing quiz answers [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Publish/unpublish question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Filter questions so only published ones are seen [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Edit questions/fields [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz question [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Reorder quiz [0m
+            [36m</li>[39m
+            [36m<li>[39m
+              [0m Add new/delete quiz [0m
+            [36m</li>[39m
+          [36m</ul>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+       5 | test("renders the text 'Hello World' somewhere", () => {
+       6 |     render(<App />);
+    >  7 |     const texts = screen.getAllByText(/Hello World/);
+         |                          ^
+       8 |     expect(texts.length).toBeGreaterThanOrEqual(1);
+       9 | });
+      10 |
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByText (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/text.test.tsx:7:26)
+
+
+Test Suites: 2 failed, 21 passed, 23 total
+Tests:       4 failed, 138 passed, 142 total
 Snapshots:   0 total
-Time:        13.818 s
+Time:        15.688 s
 Ran all test suites.
